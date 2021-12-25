@@ -1,6 +1,6 @@
 ### HONDA KEIHIN KLINE PROTOCOL (DIAGNOSTIC)
 
-#### STEPS 1:
+STEPS 1:
 1. Pin Tx = Low (70 ms)
 2. Pin Tx = High (120 ms)
 3. Set Baudrate = 10400 bps
@@ -10,7 +10,7 @@
 7. ECU Response = 02 04 00 FA
 8. Repeat point 1 if there is no response from the ECU. And continue the next Steps if there is a response from the ECU
 
-#### STEPS 2:
+STEPS 2:
 1. Send Request ECM ID = 72 05 71 00 18 
 2. ECU Response (eg) = 02 0F 71 00 01 02 32 0F 01 00 00 00 00 00 39
 3. Send Request data table 11 = 72 05 71 11 07
@@ -18,14 +18,6 @@
 5. If the ecu response data in table 11 is = 02 05 71 11 77
 6. then continue to request data table 17. Send to ECU = 72 05 71 17 01
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
-
-In addition to using  query table 71, you can also use  query table 72 for example for table 17.
-
-Requests :
-72 07 72 17 00 0F EF
-
-Response (eg):
-02 15 72 17 00 00 00 17 00 33 7A FF FF FF FF 7D 00 00 62 80 41
 
 DESCIPTION:
 * Request = 72 AA BB CC CS
