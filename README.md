@@ -19,7 +19,10 @@ STEPS 2:
 6. then continue to request data table 17. Send to ECU = 72 05 71 17 01
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
 
-DESCIPTION:
+> All processes are carried out for a maximum of 2 seconds otherwise the ECU will sleep again.
+For that, do step 1 and step 2 sequentially
+
+DESCRIPTION:
 * Request = 72 AA BB CC CS
 * 72 = Request Header Code
 * AA = Number of Bytes (including the Checksum)
@@ -34,8 +37,6 @@ CHECKSUM
 * For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 13)) AND FF , result CS = 05
 * So the data request table 13 = 72 05 71 13 05
 
-All processes are carried out for a maximum of 2 seconds otherwise the ECU will sleep again.
-For that, do step 1 and step 2 sequentially
 
 #### K-LINE SCHEMATIC
 ![IMAGE](https://github.com/AutotronicCommunity/Honda_Keihin_KLine_Protocol/blob/main/FTDI%20KLINE.png)
