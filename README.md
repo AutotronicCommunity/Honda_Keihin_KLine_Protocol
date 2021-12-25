@@ -35,6 +35,7 @@ Description:
 * CC = Table
 * CS = Checksum
 
+CHECKSUM
 * Usually to make a data table can be started from 00 to FF. With code 72 05 71 ZZ CS
 * Where ZZ = data table 00 to FF and CS = Checksum
 * The formula checksum = (100 - sumbyte) and FF
