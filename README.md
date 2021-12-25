@@ -28,12 +28,12 @@ Response (eg):
 02 15 72 17 00 00 00 17 00 33 7A FF FF FF FF 7D 00 00 62 80 41
 
 Description:
-Request = 72 AA BB CC CS
-72 = Request Header Code
-AA = Number of Bytes (including the Checksum)
-BB = Query Table
-CC = Table
-CS = Checksum
+* Request = 72 AA BB CC CS
+* 72 = Request Header Code
+* AA = Number of Bytes (including the Checksum)
+* BB = Query Table
+* CC = Table
+* CS = Checksum
 
 * Usually to make a data table can be started from 00 to FF. With code 72 05 71 ZZ CS
 * Where ZZ = data table 00 to FF and CS = Checksum
