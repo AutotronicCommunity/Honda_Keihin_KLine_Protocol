@@ -27,7 +27,7 @@ Requests :
 Response (eg):
 02 15 72 17 00 00 00 17 00 33 7A FF FF FF FF 7D 00 00 62 80 41
 
-Description:
+DESCIPTION:
 * Request = 72 AA BB CC CS
 * 72 = Request Header Code
 * AA = Number of Bytes (including the Checksum)
