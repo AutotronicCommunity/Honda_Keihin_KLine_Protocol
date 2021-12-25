@@ -1,4 +1,4 @@
-### Honda_Keihin_KLine_Protocol
+### HONDA KEIHIN KLINE PROTOCOL
 
 #### STEPS 1:
 1. Pin Tx = Low (70 ms)
