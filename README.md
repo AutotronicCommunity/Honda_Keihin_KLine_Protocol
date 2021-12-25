@@ -20,8 +20,10 @@
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
 
 In addition to using table 71 addresses, you can also use table addresses 72 for example for table 17.
+
 Requests :
 72 07 72 17 00 0F EF
+
 Response (eg):
 02 15 72 17 00 00 00 17 00 33 7A FF FF FF FF 7D 00 00 62 80 41
 
