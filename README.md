@@ -19,7 +19,7 @@
 6. then continue to request data table 17. Send to ECU = 72 05 71 17 01
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
 
-In addition to using table 71 addresses, you can also use table addresses 72 for example for table 17.
+In addition to using addresses query table 71, you can also use addresses query table 72 for example for table 17.
 
 Requests :
 72 07 72 17 00 0F EF
