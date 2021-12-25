@@ -15,9 +15,15 @@
 2. ECU Response (eg) = 02 0F 71 00 01 02 32 0F 01 00 00 00 00 00 39
 3. Send Request data table 11 = 72 05 71 11 07
 4. ECU Response data table 11 (eg) = 02 19 71 11 00 00 00 00 FF 0A AA 0A FF B2 FF FF 79 00 00 00 80 53 09 F1 5C
-5. If the ecu response data in table 11 is = 02 0C 74 04 00 00 00 00 00 00 00 7A
+5. If the ecu response data in table 11 is = 02 05 71 11 77
 6. then continue to request data table 17. Send to ECU = 72 05 71 17 01
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
+
+* Usually to make a data table query can be started from 00 to FF. With code 72 05 71 ZZ CS
+* Where ZZ = data table 00 to FF and CS = Checksum
+* The formula checksum = (100 - sumbyte) and FF
+* For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 12)) AND FF , result CS = 05
+* So the data request table 13 = 72 05 71 12 05
 
 All processes are carried out for a maximum of 2 seconds otherwise the ECU will sleep again.
 For that, do step 1 and step 2 sequentially
