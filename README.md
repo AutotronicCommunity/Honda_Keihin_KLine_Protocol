@@ -22,8 +22,8 @@
 * Usually to make a data table query can be started from 00 to FF. With code 72 05 71 ZZ CS
 * Where ZZ = data table 00 to FF and CS = Checksum
 * The formula checksum = (100 - sumbyte) and FF
-* For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 12)) AND FF , result CS = 05
-* So the data request table 13 = 72 05 71 12 05
+* For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 13)) AND FF , result CS = 05
+* So the data request table 13 = 72 05 71 13 05
 
 All processes are carried out for a maximum of 2 seconds otherwise the ECU will sleep again.
 For that, do step 1 and step 2 sequentially
