@@ -19,7 +19,7 @@
 6. then continue to request data table 17. Send to ECU = 72 05 71 17 01
 7. ECU will respond to data table 17 (eg) = 02 18 71 17 00 00 00 00 FF 0A FF FF FF FF 79 00 00 80 8D 00 00 00 00 D3
 
-In addition to using addresses query table 71, you can also use addresses query table 72 for example for table 17.
+In addition to using  query table 71, you can also use  query table 72 for example for table 17.
 
 Requests :
 72 07 72 17 00 0F EF
@@ -27,7 +27,15 @@ Requests :
 Response (eg):
 02 15 72 17 00 00 00 17 00 33 7A FF FF FF FF 7D 00 00 62 80 41
 
-* Usually to make a data table query can be started from 00 to FF. With code 72 05 71 ZZ CS
+Description:
+Request = 72 AA BB CC CS
+72 = Request Header Code
+AA = Number of Bytes (including the Checksum)
+BB = Query Table
+CC = Table
+CS = Checksum
+
+* Usually to make a data table can be started from 00 to FF. With code 72 05 71 ZZ CS
 * Where ZZ = data table 00 to FF and CS = Checksum
 * The formula checksum = (100 - sumbyte) and FF
 * For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 13)) AND FF , result CS = 05
