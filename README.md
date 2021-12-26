@@ -39,4 +39,4 @@ CHECKSUM
 
 
 #### K-LINE SCHEMATIC
-![IMAGE](https://github.com/AutotronicCommunity/Honda_Keihin_KLine_Protocol/blob/main/circuit.png)
+![IMAGE](https://github.com/AutotronicCommunity/Honda_Keihin_KLine_Protocol/blob/main/CIRCUIT%20UART%20KLINE.png)
