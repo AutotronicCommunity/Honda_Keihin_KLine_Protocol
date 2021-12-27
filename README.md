@@ -33,8 +33,8 @@ DESCRIPTION:
 CHECKSUM
 * Usually to make a data table can be started from 00 to FF. With code 72 05 71 ZZ CS
 * Where ZZ = data table 00 to FF and CS = Checksum
-* The formula checksum = (100 - sumbyte) and FF
-* For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = (100 - (72 + 05 + 71 + 13)) AND FF , result CS = 05
+* The formula checksum = 100 - (sumbyte and FF)
+* For example the data request Table 13 = 72 05 71 13 CS Then the checksum value = 100 - ((72 + 05 + 71 + 13) AND FF) , result CS = 05
 * So the data request table 13 = 72 05 71 13 05
 
 
